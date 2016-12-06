@@ -5,7 +5,7 @@ Summary:        Interactive ncurses client for the HAProxy unix socket
 Group:          Applications/System
 License:        GPLv3
 URL:            http://feurix.org/projects/hatop/
-Source0:        http://hatop.googlecode.com/files/%{name}-%{version}.tar.gz
+Source0:        https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hatop/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 BuildRequires:  python
