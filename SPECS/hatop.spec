@@ -4,10 +4,10 @@ Release:        1%{dist}
 Summary:        Interactive ncurses client for the HAProxy unix socket
 Group:          Applications/System
 License:        GPLv3
-URL:            http://feurix.org/projects/hatop/
+URL:            http://feurix.org/projects/hatop
 Source0:        https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hatop/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  python
 
 %description
@@ -22,10 +22,12 @@ directly out of hatop and monitor the results immediately.
 %setup -q -n %{name}-%{version}
 %build
 %install
-%{__install} -d -m 0755 %{buildroot}%{_sbindir}
-%{__install} -d -m 0755 %{buildroot}%{_datadir}/man/man1
+%{__install} -d -m 0755 %{buildroot}%{_sbindir} \
+                        %{buildroot}%{_datadir}/man/man1
+
 %{__install} -m 0755 bin/%{name} %{buildroot}%{_sbindir}
 %{__install} -m 0644 man/%{name}.1 %{buildroot}%{_datadir}/man/man1
+
 %{__gzip} -9 %{buildroot}%{_datadir}/man/man1/%{name}.1
 
 %clean
@@ -34,9 +36,9 @@ directly out of hatop and monitor the results immediately.
 %files
 %doc CHANGES HACKING KEYBINDS LICENSE README
 %defattr(-,root,root,-)
-%{_sbindir}/hatop
+%{_sbindir}/%{name}
 %{_datadir}/man/man1/%{name}.*
 
 %changelog
-* Fri Jun 19 2015 Taylor Kimball <taylor@linuxhq.org> - 0.7.7-1
+* Fri Jun 19 2015 Taylor Kimball <tkimball@linuxhq.org> - 0.7.7-1
 - Initial build.

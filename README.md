@@ -18,9 +18,17 @@ To build the package follow the steps outlined below
     yum-builddep rpmbuild/SPECS/hatop.spec
     rpmbuild -ba rpmbuild/SPECS/hatop.spec
 
+## Partners
+
+[![packagecloud](http://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/10543/gKme3F4XRaC5EyKJzKsA)](https://packagecloud.io)
+
+Do you need trustworthy hosted package repositories?  Then packagecloud is for you.
+
+A big thank you to packagecloud for supporting the open source community!
+
 ## License
 
-BSD
+GPLv3
 
 ## Author Information
 
