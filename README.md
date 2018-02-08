@@ -1,6 +1,6 @@
 # rpmbuild-hatop
 
-Create a hatop RPM for RHEL/CentOS.
+Create a HATop RPM for RHEL/CentOS.
 
 ## Requirements
 
