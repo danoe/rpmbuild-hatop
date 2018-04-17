@@ -4,8 +4,8 @@ Release:        1%{dist}
 Summary:        Interactive ncurses client for the HAProxy unix socket
 Group:          Applications/System
 License:        GPLv3
-URL:            http://feurix.org/projects/hatop
-Source0:        https://github.com/feurix/hatop/archive/v%{version}.tar.gz
+URL:            http://feurix.org/projects/%{name}
+Source0:        https://github.com/feurix/%{name}/archive/v%{version}.tar.gz
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  python
