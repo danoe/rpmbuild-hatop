@@ -1,7 +1,7 @@
+# rpmbuild-hatop
+
 [![Package Cloud](https://img.shields.io/badge/packagecloud-hatop-blue.svg?style=flat)](https://packagecloud.io/linuxhq/hatop)
 [![License](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?style=flat)](COPYING)
-
-# rpmbuild-hatop
 
 Create a HATop RPM for RHEL/CentOS.
 
